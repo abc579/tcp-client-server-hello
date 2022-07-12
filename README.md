@@ -21,3 +21,18 @@ Run `make`; this will compile both the server and the client.
 # Things To Improve
 
 + Socket abstraction: this will be useful to avoid calling close() whenever something goes wrong.
+
+# Example
+
+After executing ./server.o; it will output:
+
+`Server: waiting for connections...`
+
+Then, we execute ./client.o; it will output:
+
+`Connecting to 127.0.0.1`
+`Server responded with: Hello client!`
+
+Finally, on server's terminal, we should see that someone connected:
+
+`Server: got connection from 127.0.0.1`
