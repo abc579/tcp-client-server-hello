@@ -18,11 +18,12 @@ Run `make`; this will compile both the server and the client.
 
     `./client.o`
 
-# Things To Improve
+# Things To Improve / Todo
 
 + Socket abstraction: this will be useful to avoid calling close() whenever something goes wrong but it's quite tricky.
 + Better code organization (.cpp and .hpp) files.
 + Tests. (catch, googletest...)
++ Run valgrind to check for leaks.
 
 # Example
 
