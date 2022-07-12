@@ -28,6 +28,11 @@ namespace network {
     };
 }
 
+/*
+ * @brief Initialize the client.
+ *
+ * @throws A network runtime error if something goes bad.
+ */
 network::client::client()
 {
     memset(&hints, 0, sizeof hints);
@@ -43,12 +48,18 @@ network::client::client()
     }
 }
 
+/*
+ * @brief Releases the linked-list allocated in the constructor by calling GETADDRINFO.
+ */
 network::client::~client()
 {
     freeaddrinfo(res);
     close(sockfd);
 }
 
+/*
+ * @brief Loop through all the results and connect to the first we can.
+ */
 void
 network::client::connect_to_first_addr(addrinfo *&currinfo)
 {
@@ -68,6 +79,11 @@ network::client::connect_to_first_addr(addrinfo *&currinfo)
     }
 }
 
+/*
+ * @brief Receive bytes (message) from server and print them to stdout.
+ *
+ * @throws A network runtime error if we couldn't receive the message.
+ */
 void
 network::client::recv_data_from_server()
 {
@@ -87,6 +103,11 @@ network::client::recv_data_from_server()
     std::cout << "Server responded with: " << buff << std::endl;
 }
 
+/*
+ * @brief Connect to the server; receive data; print it to stdout; exit.
+ *
+ * @throws A network runtime error if we couldn't connect to the server or couldn't receive the message.
+ */
 void
 network::client::run()
 {
