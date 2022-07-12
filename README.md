@@ -5,15 +5,14 @@ First, we should run the server; then the client.
 
 # Compilation
 
-`make server`
-`make client`
+Run `make`
 
 # Execution
 
 1. Run the server.
 
-./server.o
+    `./server.o`
 
 2. Run the client.
 
-./client.o
+    `./client.o`
