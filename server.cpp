@@ -6,7 +6,6 @@
  * @brief This is a simple server that responds with a "Hello, client." message when someone
  * connects.
  */
-
 int
 main()
 {

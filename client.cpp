@@ -1,15 +1,15 @@
 #include <iostream>
 #include <cstdlib>
-
 #include "client.hpp"
 
 /*
  * @brief This simple client program just connects to the running server.
  */
-
 int
 main()
 {
+    std::ios_base::sync_with_stdio(false);
+
     try {
         network::client c;
         c.run();

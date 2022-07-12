@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-std=c++17 -g3 -Wall -Werror -Wextra -Wpedantic -fsanitize=address
+CXXFLAGS=-std=c++17 -O2 -Wall -Werror -Wextra -Wpedantic -fsanitize=address
 
 all: server client
 
