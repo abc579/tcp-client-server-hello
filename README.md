@@ -20,7 +20,9 @@ Run `make`; this will compile both the server and the client.
 
 # Things To Improve
 
-+ Socket abstraction: this will be useful to avoid calling close() whenever something goes wrong.
++ Socket abstraction: this will be useful to avoid calling close() whenever something goes wrong but it's quite tricky.
++ Better code organization (.cpp and .hpp) files.
++ Tests. (catch, googletest...)
 
 # Example
 
