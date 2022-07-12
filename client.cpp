@@ -3,7 +3,8 @@
 #include "client.hpp"
 
 /*
- * @brief This simple client program just connects to the running server.
+ * @brief This is a simple client program that just connects to the running server and prints whatever
+ *        message it received.
  */
 int
 main()
