@@ -34,8 +34,13 @@ After executing ./server.o; it will output:
 Then, we execute ./client.o; it will output:
 
 `Connecting to 127.0.0.1`
+
 `Server responded with: Hello client!`
 
 Finally, on server's terminal, we should see that someone connected:
 
 `Server: got connection from 127.0.0.1`
+
+# Notes
+
+I am new to C++ so please take this code with a grain of salt. There might be some issues that I did not detect yet.
