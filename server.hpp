@@ -214,7 +214,7 @@ network::server::run()
         throw network_runtime_error {msg.str()};
     }
 
-    std::cout << "Server: waiting for connections...\n" << std::endl;
+    std::cout << "Server: waiting for connections..." << std::endl;
 
     process_cli_connections();
 }
